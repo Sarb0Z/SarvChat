@@ -1,23 +1,33 @@
 import React from "react";
-import { Text, StyleSheet, View, Image } from 'react-native';
+import { Text, StyleSheet, View, Image, Pressable } from 'react-native';
+import { useNavigation } from "@react-navigation/core";
+
 
 export default function chatBox(props){
   const { chatRoom } = props;
   const user=chatRoom.users[1];
+  const navigation=useNavigation();
+  const onPress=()=>{
+    console.warn("pressed");
+    navigation.navigate('ChatScreen', {id:chatRoom.id});
+  }
+
     return (
-        <View style={styles.chatBox}>
+        <Pressable onPress={onPress} style={styles.chatBox}>
         <Image source={{uri:`https://source.unsplash.com/random/80x80?sig=${Math.random()}`}} style={styles.icon}/>
         <View style={styles.rightBox}>
           <View style={styles.row}>
             <Text style={styles.name}> {user.name}</Text>
             <Text style={styles.text}> {chatRoom.lastMessage.createdAt}</Text>
           </View>
-          <Text style={styles.text} numberOfLines={2}>{chatRoom.lastMessage.content}</Text>
+          <View style={styles.row}>
+          <Text style={styles.text} numberOfLines={1}>{chatRoom.lastMessage.content}</Text>
           {chatRoom.newMessages?<View style={styles.messageCount}>
             <Text style={styles.countNum}>{chatRoom.newMessages}</Text>
           </View>:null}
+          </View>
         </View>
-      </View>
+      </Pressable>
     );
 }
 const styles =StyleSheet.create({
@@ -25,8 +35,7 @@ const styles =StyleSheet.create({
       flexDirection:'row',
       padding: 10,
       borderWidth:1,
-      borderColor:'grey'
-      //backgroundColor:'orange'
+      borderColor:'orange',
     },
     rightBox:{
       //backgroundColor:'orange',
@@ -38,13 +47,10 @@ const styles =StyleSheet.create({
       width:25,
       height:25,
       borderRadius:50,
-      borderWidth:1,
-      borderColor:'white',
+      position:'absolute',
+      right:2,
       justifyContent:'center',
       alignItems:'center',
-      position:'absolute',
-      left:195,
-      bottom:5,
     },
     countNum:{
       color:'white',

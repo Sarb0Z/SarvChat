@@ -11,7 +11,7 @@ export default {
 	}],
 	messages: [{
 		id: 'm1',
-		content: 'How are you, Elon!',
+		content: 'Sex sex sex',
 		createdAt: '2020-10-10T12:48:00.000Z',
 		user: {
 			id: 'u1',
@@ -19,7 +19,7 @@ export default {
 		},
 	}, {
 		id: 'm2',
-		content: 'I am good, good',
+		content: 'Banker alliance is on out tracks over out',
 		createdAt: '2020-10-03T14:49:00.000Z',
 		user: {
 			id: 'u2',
@@ -35,7 +35,7 @@ export default {
 		},
 	}, {
 		id: 'm4',
-		content: 'Good as well, preparing for the stream now.',
+		content: 'Good good good. Prepare for the thingie thong the spider man.',
 		createdAt: '2020-10-03T14:50:00.000Z',
 		user: {
 			id: 'u1',
@@ -43,7 +43,7 @@ export default {
 		},
 	}, {
 		id: 'm5',
-		content: 'How is SpaceX doing?',
+		content: 'How is your mother doing?',
 		createdAt: '2020-10-03T14:51:00.000Z',
 		user: {
 			id: 'u1',
@@ -59,7 +59,7 @@ export default {
 		},
 	}, {
 		id: 'm7',
-		content: 'btw, SpaceX is interested in buying notJust.dev!',
+		content: 'btw, we are interested in having sex incel!',
 		createdAt: '2020-10-03T14:53:00.000Z',
 		user: {
 			id: 'u2',

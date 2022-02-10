@@ -11,7 +11,7 @@ export default [{
   }],
   lastMessage: {
     id: 'm1',
-    content: 'btw, SpaceX is interested in buying notJust.dev!',
+		content: 'Banker alliance is on out tracks over out',
     createdAt: '2020-10-03T14:48:00.000Z',
   },
   newMessages: 4,
@@ -30,7 +30,8 @@ export default [{
     id: 'm2',
     content: 'Why did you reject our offer?',
     createdAt: '2020-10-02T15:40:00.000Z',
-  }
+  },
+  newMessages: 18,
 }, {
   id: '3',
   users: [{
@@ -46,7 +47,8 @@ export default [{
     id: 'm3',
     content: 'Is signal really better than my Whatsapp?',
     createdAt: '2020-10-02T14:48:00.000Z',
-  }
+  },
+  newMessages: 2,
 }, {
   id: '4',
   users: [{
@@ -62,7 +64,8 @@ export default [{
     id: 'm4',
     content: 'Destroy the like button!',
     createdAt: '2020-09-29T14:48:00.000Z',
-  }
+  },
+  newMessages: 0,
 }, {
   id: '5',
   users: [{
@@ -94,7 +97,8 @@ export default [{
     id: 'm6',
     content: 'Who sus?',
     createdAt: '2020-10-02T15:40:00.000Z',
-  }
+  },
+  newMessages: 27,
 }, {
   id: '7',
   users: [{

@@ -1,12 +1,11 @@
 import React from 'react';
-import { RootTabScreenProps } from '../types';
-import { Text, StyleSheet, View, Image, FlatList } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
 
 import ChatBox from '../components/ChatBox';
 import ChatRoomsData from '../assets/dummy-data/ChatRooms';
 
 
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'Chats'>) {
+export default function ChatForum() {
   return (
     <View style={styles.page}>
       <FlatList 
