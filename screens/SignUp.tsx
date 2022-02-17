@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
-import { signupUser } from "./stateSlices/signupSlice";
+import { signupUser } from "../components/stateSlices/signUpSlice";
 const Signup = () => {
   const dispatch = useDispatch();
   const history = useHistory();

@@ -1,9 +1,12 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { signinUser } from "./stateSlices/signinSlice";
+import { signinUser } from "../components/stateSlices/signInSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
+
+
+
 const Signin = () => {
   const { status, loggedInUser, error } = useSelector((state) => state.signin);
   const dispatch = useDispatch();

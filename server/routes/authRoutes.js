@@ -13,6 +13,7 @@ router.get(
     });
   })
 );
+
 router.get(
   "/api/users",
   requireAuth,

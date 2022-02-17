@@ -20,6 +20,9 @@ import LinkingConfiguration from './LinkingConfiguration';
 
 import ChatScreen from '../screens/ChatRoomScreen';
 import ChatForum from '../screens/ForumScreen';
+import Signup from '../screens/SignUp';
+import Signin from '../screens/SignIn';
+
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
